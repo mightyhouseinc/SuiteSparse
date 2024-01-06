@@ -39,7 +39,7 @@ if read_the_docs_build:
     output_dir = 'build'
     configureDoxyfile(input_dir, output_dir)
     subprocess.call('doxygen', shell=True)
-    breathe_projects['lagraph'] = output_dir + '/xml'
+    breathe_projects['lagraph'] = f'{output_dir}/xml'
 
 
 # -- Project information -----------------------------------------------------

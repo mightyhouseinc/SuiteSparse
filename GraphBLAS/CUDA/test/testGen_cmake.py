@@ -163,8 +163,8 @@ def write_cuda_test(source_dir, test_suite_name, mat_format, semiring, kernel):
 if __name__ == "__main__":
     import sys
 
-    if(len(sys.argv) != 8):
-        raise ValueError("Expected 7 arguments but only got %s" % len(sys.argv))
+    if (len(sys.argv) != 8):
+        raise ValueError(f"Expected 7 arguments but only got {len(sys.argv)}")
 
     """
     First load values
